@@ -20,7 +20,7 @@ MongoClient.connect('mongodb://localhost:27017', (error, client) => {
     // });
     db.collection('Users').find({location: 'Surat'}).toArray().then((docs) => {
         console.log(JSON.stringify(docs, undefined, 4));
-    })
+    });
 
     client.close();
 });
