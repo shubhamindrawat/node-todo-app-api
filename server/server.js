@@ -44,8 +44,8 @@ app.get('/todos/:id', (req, res) => {
             res.status(404).send({message: 'No Results Found'});
         }
         res.status(200).send({todos});
-    }, (e) => {
-        res.status(400).send();
+    }).catch((e) => {
+        res.status(400).send({e});
     });
 });
 
