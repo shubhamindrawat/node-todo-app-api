@@ -37,7 +37,7 @@ app.get('/todos/:id', (req, res) => {
         res.status(404).send({message: 'Invalid ID'});
     }
     
-    Todo.findOne(id).then((todos) => {
+    Todo.findById(id).then((todos) => {
         if(!todos){
             res.status(404).send({message: 'No Results Found'});
         }
