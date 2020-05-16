@@ -4,7 +4,7 @@ const {mongoose} = require('./../server/db/mongoose');
 const {Todo} = require('./../server/models/todo');
 const {User} = require('./../server/models/user');
 
-// var id = '5eb8568590990250100984a31';
+// var id = '5eb8568590990250100984a3';
 
 // if(!ObjectID.isValid(id)){
 //     console.log('Invalid ID');
@@ -29,11 +29,9 @@ const {User} = require('./../server/models/user');
 //     console.log('Todo By ID', todoByID);
 // }).catch((e) => console.log(e));
 
-var id= '';
-
 // User.find().then((users) => {
 //     console.log('Users: ', users);
 // });
-User.findById('5eb44c047d8b7d76ff54edfc').then((user) => {
-    console.log('User: ', user);
-});
+// User.findById('5eb44c047d8b7d76ff54edfc').then((user) => {
+//     console.log('User: ', user);
+// });
